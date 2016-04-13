@@ -4,6 +4,7 @@ MAINTAINER Ludovic Roguet <code@fourteenislands.io>
 RUN \
   apt-get update && \
   apt-get install -y -q --no-install-recommends nginx && \
+  apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
