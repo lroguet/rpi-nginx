@@ -1,6 +1,7 @@
 # rpi-nginx
-## Running behind rpi-nginx-proxy?
-Nginx configuration example for a site running behind [rpi-nginx-proxy](https://github.com/lroguet/rpi-nginx-proxy).
+
+## Custom Nginx Configuration
+Running behind [rpi-nginx-proxy](https://github.com/lroguet/rpi-nginx-proxy)? Here's a Nginx configuration for the default site.
 
 ```
 # /etc/nginx/sites-enabled/default
@@ -28,3 +29,7 @@ server {
 
 }
 ```
+
+## Resources
+* [Docker Hub](https://hub.docker.com/r/lroguet/rpi-nginx/)
+* [In action](http://lab.fourteenislands.io/nginx-reverse-proxy-docker-and-a-raspberry-pi/)
