@@ -1,8 +1,12 @@
 FROM resin/rpi-raspbian
 MAINTAINER Ludovic Roguet <code@fourteenislands.io>
 
-RUN apt-get update && apt-get install -y nginx && \
-  rm -rf /var/lib/apt/lists/* && \
+RUN \
+  apt-get update && \
+  apt-get -y -q --no-install-recommends nginx && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
   chown -R www-data:www-data /var/lib/nginx
   
@@ -22,4 +26,4 @@ CMD ["nginx"]
 
 # Expose ports.
 EXPOSE 80
-#EXPOSE 443
+EXPOSE 443
