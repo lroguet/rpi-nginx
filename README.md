@@ -32,4 +32,4 @@ server {
 
 ## Resources
 * [Docker Hub](https://hub.docker.com/r/lroguet/rpi-nginx/)
-* [In action](https://fourteenislands.io/nginx-reverse-proxy-docker-and-a-raspberry-pi/)
+* [In action](https://fourteenislands.io/2016/04/nginx-reverse-proxy-docker-and-a-raspberry-pi/)
